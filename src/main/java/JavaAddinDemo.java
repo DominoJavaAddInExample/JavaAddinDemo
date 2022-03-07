@@ -26,7 +26,7 @@ public class JavaAddinDemo extends JavaServerAddinGenesis {
 
 	@Override
 	protected String getJavaAddinDate() {
-		return "2022-03-07 20:30";
+		return "2022-03-07 20:31";
 	}
 
 	@Override
