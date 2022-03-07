@@ -1,15 +1,8 @@
-import java.util.Arrays;
 import java.util.Calendar;
 
 public class JavaAddinDemo extends JavaServerAddinGenesis {
-	// constructor if parameters are provided
-	public JavaAddinDemo(String[] args) {
-		this.args = args;
-	}
-
-	public JavaAddinDemo() {}
 	
-	private void showHelp() {
+	protected void showHelp() {
 		int year = Calendar.getInstance().get(Calendar.YEAR);
 		logMessage("*** Usage ***");
 		AddInLogMessageText("load runjava JavaAddinDemo");
@@ -28,36 +21,21 @@ public class JavaAddinDemo extends JavaServerAddinGenesis {
 
 	@Override
 	protected String getJavaAddinVersion() {
-		return "1.1.0";
+		return "1.2.1";
 	}
 
 	@Override
 	protected String getJavaAddinDate() {
-		return "2022-03-01 14:30";
+		return "2022-03-07 20:30";
 	}
 
 	@Override
-	protected void showInfo() {
-		logMessage("version      " + this.getJavaAddinName());
-		logMessage("date         " + this.getJavaAddinDate());
-		logMessage("parameters   " + Arrays.toString(this.args));
+	protected boolean resolveMessageQueueState(String cmd) {
+		boolean flag = super.resolveMessageQueueState(cmd);
+		if (flag) return true;
+
+		logMessage("invalid command (use -h or help to get details)");
+		return false;
 	}
 
-	@Override
-	protected void resolveMessageQueueState(String cmd) {
-		if ("-h".equals(cmd) || "help".equals(cmd)) {
-			showHelp();
-		}
-		else if ("-i".equals(cmd) || "info".equals(cmd)) {
-			showInfo();
-		}
-		else {
-			logMessage("invalid command (use -h or help to get details)");
-		}
-	}
-
-	@Override
-	protected String getCmdFileName() {
-		return "javaaddindemo.txt";
-	}
 }
