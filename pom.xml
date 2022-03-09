@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.prominic</groupId>
 	<artifactId>JavaAddinDemo</artifactId>
-	<version>1.2.0</version>
+	<version>1.2.2</version>
 	<name>JavaAddinDemo</name>
 	<url>http://maven.apache.org</url>
 
