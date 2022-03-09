@@ -21,12 +21,12 @@ public class JavaAddinDemo extends JavaServerAddinGenesis {
 
 	@Override
 	protected String getJavaAddinVersion() {
-		return "1.2.2";
+		return "1.2.3";
 	}
 
 	@Override
 	protected String getJavaAddinDate() {
-		return "2022-03-07 20:31";
+		return "2022-03-09 16:05";
 	}
 
 	@Override
