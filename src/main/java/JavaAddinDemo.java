@@ -21,7 +21,7 @@ public class JavaAddinDemo extends JavaServerAddinGenesis {
 
 	@Override
 	protected String getJavaAddinVersion() {
-		return "1.2.3";
+		return "1.2.4";
 	}
 
 	@Override
