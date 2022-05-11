@@ -1,4 +1,4 @@
-import net.prominic.gja_v20220413.JavaServerAddinGenesis;
+import net.prominic.gja_v20220511.JavaServerAddinGenesis;
 
 public class JavaAddinDemo extends JavaServerAddinGenesis {
 
@@ -9,7 +9,7 @@ public class JavaAddinDemo extends JavaServerAddinGenesis {
 
 	@Override
 	protected String getJavaAddinDate() {
-		return "2022-04-13 15:05";
+		return "2022-05-11 15:05";
 	}
 
 	@Override
