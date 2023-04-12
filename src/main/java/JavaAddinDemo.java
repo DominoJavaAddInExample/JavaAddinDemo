@@ -1,15 +1,15 @@
-import net.prominic.gja_v20220512.JavaServerAddinGenesis;
+import net.prominic.gja_v082.JavaServerAddinGenesis;
 
 public class JavaAddinDemo extends JavaServerAddinGenesis {
 
 	@Override
 	protected String getJavaAddinVersion() {
-		return "1.2.8";
+		return "1.0.0";
 	}
 
 	@Override
 	protected String getJavaAddinDate() {
-		return "2022-05-12 15:05";
+		return "2022-06-08 22:00";
 	}
 
 	@Override
